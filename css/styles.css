@@ -84,7 +84,11 @@ ul, ol{
   align-items: center;
   gap: 40px;
 }
-
+.link{
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link:hover,
 .link:focus{
   color:#404BBF;
@@ -180,6 +184,9 @@ gap: 40px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color:var(--color-wite);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-hero:hover,
 .button-hero:focus{
@@ -320,6 +327,9 @@ width: calc((100% - 3 * 24px) / 4);
   justify-content: center;
   align-items: center;
   margin-top: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item:hover,
 .team-item:focus{
@@ -350,9 +360,13 @@ width: calc((100% - 3 * 24px) / 4);
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--lightslate, #8E8F99);
+  transition-property: background-color, color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-customer:hover{
+.customer-link:hover,
+.customer-link:focus{
 border-color: #404BBF;
 color: #404BBF;
 }
@@ -362,10 +376,8 @@ color:#8E8F99;
 .icon-customer{
 fill: currentColor;
 }
-
-.customer-link:hover{
-  border-color: #404BBF;
-  color: #404BBF;
+.customer-link:hover.icon-customer{
+fill:#404BBF;
 }
 
 
@@ -392,6 +404,9 @@ row-gap: 48px;
 }
 .card-list{
 width: calc((100% - 2 * 24px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-list:hover{
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -409,6 +424,9 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--cornflower);
+    transition-property: color, background-color, border, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-button:hover,
 .buttons-button:focus{
@@ -474,6 +492,9 @@ border-bottom: 1px solid var(--cornflower);
   height: 40px;
   background-color: #4D5AE5;
   border-radius: 50%;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-footer:hover{
   background-color:#31d0aa;
