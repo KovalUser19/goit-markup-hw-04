@@ -66,6 +66,9 @@ ul, ol{
   border-bottom: 1px solid var(--cornflower, #E7E9FC);
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
 .header-container{
@@ -111,6 +114,9 @@ ul, ol{
 .wite-link{
   color: var(--bg-team-text);
 }
+.sublist.active{
+  color: #404bbf;
+}
 .sublist {
   position: relative;
   font-weight: 500;
@@ -129,6 +135,9 @@ display: block;
   height: 4px;
   border-radius: 2px;
   background: var(--ocean, #404BBF);
+}
+.active::after{
+  bottom: -1px;
 }
 .address{
 margin-left: auto;
